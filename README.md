@@ -1,5 +1,9 @@
 # Wayfinder
 
+<p align="center">
+  <img src="docs/images/wayfinder-logo.png" alt="Wayfinder fantasy-gold W wordmark" width="680">
+</p>
+
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-concept%20phase-orange?style=for-the-badge)
@@ -31,6 +35,7 @@ This is a real in-game screenshot supplied during development, not a finished mo
 ## What exists in the prototype
 
 - A standalone tracker window intended to run beside the game’s default tracker.
+- An original fantasy-gold W wordmark for the project.
 - A launcher button, tracker title, refresh and settings controls, and a preview mode.
 - A separate appearance panel with controls for width, font size, row spacing, and opacity.
 - A draggable tracker with native edge/corner resizing and saved size/position settings.
