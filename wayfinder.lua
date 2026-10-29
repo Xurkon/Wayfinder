@@ -308,7 +308,7 @@ end)
 
 settingsWindow = CreateEmptyWindow("wayfinderSettings", "UIParent")
 DebugPrint("startup: settings window created")
-settingsWindow:SetExtent(355, 430)
+settingsWindow:SetExtent(350, 430)
 settingsWindow:SetUILayer("system")
 settingsWindow:Enable(true)
 settingsWindow:Clickable(true)
@@ -415,7 +415,19 @@ UpdateSettingsText()
 DebugPrint("startup: applying final style")
 ApplyStyle()
 tracker:Show(true)
-DebugPrint("startup: complete (tracker shown)")
+previewMode = true
+previewButton:SetText("Live quests")
+statusLabel:SetText("TEST PREVIEW  ·  sample rows; press Refresh for live quests")
+for index = 1, 3 do
+  if rows[index] == nil then
+    rows[index] = CreateLabel(tracker, "previewRow" .. tostring(index), "", settings.fontSize, { 0.90, 0.90, 0.88, 1 })
+  end
+  rows[index].questIndex = nil
+  rows[index]:SetText(({ "A Road Through Two Crowns", "Gather 6 × Blue Salt Clams", "Return to the Trading Post  ·  Complete" })[index])
+  rows[index]:Show(true)
+end
+ApplyStyle()
+DebugPrint("startup: complete (visual test preview shown)")
 end
 
 local initOk, initErr = pcall(Initialize)

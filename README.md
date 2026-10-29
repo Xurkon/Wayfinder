@@ -41,6 +41,8 @@ These items describe code currently present, not features confirmed to work in-g
 - [x] Restore the full prototype source after the minimal crash-isolation pass.
 - [x] Set the prototype to show the tracker at startup for visual testing.
 - [ ] Confirm the complete addon reaches the world reliably across repeated launches.
+- [x] Load the shared window helper and use its supported settings-panel width.
+- [x] Show synthetic preview rows at startup to make the visual smoke test unambiguous.
 - [ ] Confirm the panel is visible, positioned correctly, and rendered above the game UI.
 - [ ] Verify launcher, drag, lock, refresh, settings, and preview controls in-game.
 - [ ] Check UI scaling, resolution changes, saved position, and relog behavior.
@@ -88,7 +90,7 @@ Potential later additions include focused quest pinning, context actions, comple
 
 There is no public release yet. Development testing uses the local addon folder and source tree configured on the maintainer’s machine. Installation instructions will be published once the file layout and in-game behavior are stable.
 
-For current development tests, enable Wayfinder through the ArcheRage addon manager, load into the world, and check whether the tracker appears near the upper-right. Use **Preview** to inspect sample rows and **Settings** to inspect appearance controls. Use **Refresh** to test quest retrieval. Record whether the game reaches the world and which visible controls respond; a successful addon load alone does not confirm quest functionality.
+The test harness is prepared with a startup preview and a settings-window width supported by the shared UI helper. Enable Wayfinder through the ArcheRage addon manager and load into the world. The tracker should open near the upper-right with three sample rows and a `TEST PREVIEW` status. Verify that the background, accent strip, title, rows, and controls are visible. Open **Settings**, adjust one appearance value, close the panel, drag the tracker, and use **Preview / Live quests** to switch modes. Then press **Refresh** once to test live quest retrieval. Note separately whether the panel rendered, controls responded, the game remained stable, and live quest data appeared. A successful load or visual preview alone does not confirm quest API behavior.
 
 ## Contributing and feedback
 
