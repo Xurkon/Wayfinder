@@ -1,0 +1,35 @@
+base: lua51
+name: ArcheRage Addon API
+globals:
+  aaprint:
+    any: true
+  ADDON:
+    any: true
+  ALIGN_LEFT:
+    any: true
+  API_TYPE:
+    any: true
+  CMF_SYSTEM:
+    any: true
+  CreateEmptyWindow:
+    any: true
+  CreateSimpleButton:
+    any: true
+  MAX_QUEST_OBJECTIVE:
+    any: true
+  OBJECT_TYPE:
+    any: true
+  UIC_QUEST_LIST:
+    any: true
+  UIC_QUEST_NOTIFIER:
+    any: true
+  UIEVENT_TYPE:
+    any: true
+  UIParent:
+    any: true
+  X2Chat:
+    any: true
+  X2Quest:
+    any: true
+  X2Sound:
+    any: true

@@ -4,4 +4,5 @@
 ../globals/button.lua
 ../globals/windowcommon.lua
 ../globals/window.lua
+quest_catalog.lua
 wayfinder.lua

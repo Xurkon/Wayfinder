@@ -1,0 +1,4 @@
+std = "archeage"
+
+[lints]
+undefined_variable = "deny"
